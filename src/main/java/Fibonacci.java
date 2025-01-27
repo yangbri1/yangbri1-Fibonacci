@@ -15,6 +15,12 @@ public class Fibonacci {
      * @return the nth number of fibonacci sequence.
      */
     public int fib(int n){
-        return 0;
+        // if n == 0 or n == 1 ...
+        if(n < 2){
+            // return itself
+            return n;
+        }
+        // otherwise if n > 2 ... return recursive function/method 'fib()'
+        return (fib(n-2) + fib(n-1));
     }
 }
